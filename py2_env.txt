@@ -1,0 +1,39 @@
+WINDOWS
+
+    Verification
+        Verify Python 2 was correctly installed.
+         py -2 -V
+
+         # Expected Output
+         Python 2.7.14
+
+    Virtual environments
+        Install the virtualenv package for Python within Python 2.
+         py -2 -m pip install virtualenv
+
+         # Expected Output
+         Collecting virtualenv
+        Downloading virtualenv-15.2.0-py2.py3-none-any.whl (2.6MB)
+         Installing collected packages: virtualenv
+         Successfully installed virtualenv-15.2.0
+
+    Now create a Python 2 virtual environment using the newly installed virtualenv module for Python 2.
+         py -2 -m virtualenv py2-venv
+
+    Now "activate" the environment. Look for the name of the virtual environment to be enclosed in parenthesis after activation.
+         source py2-venv/Scripts/activate
+
+         W10 use PS1 (powershell command)
+        
+         # Expected Output
+        (py2-venv)
+        IEUser@IE11Win10 MINGW64 ~/code
+
+    Now verify that python is now linked to Python 2.
+
+        python -V
+        Python 2.7.14
+
+    Deactivate the virtual environment.
+        deactivate
+

@@ -1,0 +1,20 @@
+WINDOWS
+
+    Verification
+        Verify Python 2 was correctly installed.
+         py -3 -V
+
+    Now create a Python 2 virtual environment using the newly installed virtualenv module for Python 2.
+         py -3 -m venv py3-venv
+
+    Now "activate" the environment. Look for the name of the virtual environment to be enclosed in parenthesis after activation.
+         source py3-venv/Scripts/activate
+
+         W10 use PS1 (powershell command)
+        
+
+    Now verify that python is now linked to Python 2.
+        python -V
+ 
+    Deactivate the virtual environment.
+        deactivate
