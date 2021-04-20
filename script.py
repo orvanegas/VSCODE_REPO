@@ -14,6 +14,7 @@ def greet(who_to_greet):
 print(sys.version)
 print(sys.executable)
 
+
 r = requests.get("http://wwww.intelsat.com")
 print(r.status_code)
 
